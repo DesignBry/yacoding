@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 초기설정 */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+.location a {text-decoration: none; color: #222;}
+.left {float: left;}
+.right {float: right;}
+.clear::after {content: ''; display: block; clear: both;}
+body {font-family: Open Sans, GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;}
+
+/* 스크롤바 설정 */
+.location .swiper-scrollbar.swiper-scrollbar-horizontal{bottom: 0; height: 8px;}
+.location .swiper-scrollbar-drag{background: none;}
+.location .swiper-scrollbar-drag:after{content: ""; width: 100px; height: 8px; border-radius: 5px; background: #ff3478; position: absolute; top: 0; left: 0; margin: 0;}
+
+/* 탭버튼 */
+.location .location-slide ul {
+    color: #222;
+    text-align: right;
+    line-height: 42px;
+    max-width: 100vw;
+    height: 42px;
+}
+
+.location .location-slide ul li {
+    font-family: 'GmarketSans';
+    padding-left: 15px;
+    display: inline-block;
+    background-color: transparent;
+    color: #222;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* 선택된 탭 버튼 스타일 */
+.location .location-slide ul li a.active {
+    color: #ff3478;
+    text-decoration: underline;
+}
+
+/* 탭하면 들어가는 슬라이드 */
+.location .location-slide .tab-source {
+    max-width: 100vw;
+    height: 356px;
+    margin-top: 10px;
+}
+
+/* 탭하면 들어가는 content 내용 스타일*/
+.location .location-slide .tab-source .tab-content {
+    margin: 0 auto;
+    width: 1520px;
+    height: 100%;
+    display: none;
+}
+
+.location .location-slide .tab-source .tab-content.active-content {
+    display: block;
+}
+
+.location .swiper-wrapper {
+    width: 350px;
+    height: 380px;
+}
+
+/* 탭 */
+.location .location-slide .tab-source .tab-content .tab {
+    margin: 0 auto;
+    max-width: 1520px;
+    height: 356px;
+}
+
+.location .slide {
+    width: 100%;
+    height: 400px;
+}
+
+.location .swiper-wrapper .swiper-slide {
+    width: 350px;
+    height: 356px;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content {
+    display: block;
+    width: 350px;
+    height: 100%;
+    clear: both;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content img {
+    border-radius: 5px;
+    width: 350px;
+    height: 247px;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .text {
+    text-align: left;
+    width: 230px;
+    height: 63px;
+    float: left;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .text h2 {
+    font-size: 20px;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .text p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    width: 100%;
+    font-size: 12px;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .review {
+    width: 70px;
+    height: 55px;
+    text-align: right;
+    float: right;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .review span {
+    font-size: 13px;
+    color: gold;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .review p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .review p > a {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .reservation {
+    margin: 5px;
+    background-color: #ff3478;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    float: right;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .reservation > a {
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .reservation:hover {
+    background-color: #fff;
+    border: 3px solid #ff3478;
+}
+
+.location .swiper-wrapper .swiper-slide .slide-content .reservation:hover > a {
+    line-height: 34px;
+    color: #ff3478;
+}
+
+
+/* 국내지역 슬라이드 */
+.location .location-slide.korea {
+    display: block;
+    margin-bottom: 100px;
+}
+.location .location-slide.korea .btn.korea {
+    margin: 50px 200px;
+}
+
+
+/* 해외지역 슬라이드 */
+.location .location-slide.abroad {}
+.location .location-slide.abroad .btn.abroad {
+    margin: 50px 200px;
+}

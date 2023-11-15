@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.mainslider .wrapper {
+    width: 1600px;
+    height: 610px;
+    display: inline-block;
+    margin: 100px 210px;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+margin-top: 100px;
+}
